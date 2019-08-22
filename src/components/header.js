@@ -1,6 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Helmet from "react-helmet"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -27,6 +28,10 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|Nunito|Sarala" rel="stylesheet" 
+        />
+      </Helmet>  
     </div>
   </header>
 )
